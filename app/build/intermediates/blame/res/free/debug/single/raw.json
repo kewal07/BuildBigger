@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/kewalkrishna/Desktop/AndroidNanoDegree/Projects/FinalProject/app/build/intermediates/res/merged/free/debug/raw/gtm_analytics",
+        "source": "/Users/kewalkrishna/Desktop/AndroidNanoDegree/Projects/FinalProject/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/res/raw/gtm_analytics"
+    },
+    {
+        "merged": "/Users/kewalkrishna/Desktop/AndroidNanoDegree/Projects/FinalProject/C:\\shradha\\udacity\\android\\project4\\ud867-master\\FinalProject\\app\\build\\intermediates\\res\\merged\\free\\debug\\raw\\gtm_analytics",
+        "source": "/Users/kewalkrishna/Desktop/AndroidNanoDegree/Projects/FinalProject/C:\\shradha\\udacity\\android\\project4\\ud867-master\\FinalProject\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics\\8.4.0\\res\\raw\\gtm_analytics"
+    }
+]

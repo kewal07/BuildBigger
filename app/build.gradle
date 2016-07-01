@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.udacity.gradle.builditbigger"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+    productFlavors {
+        paid {
+        }
+        free {
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    // Added for AdMob
+    compile project(":jokesjavalibrary")
+    compile project(":jokesandroidlibrary")
+    compile project(path: ':jokesbackend', configuration: 'android-endpoints')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.android.support:support-v4:23.3.0'
+}
+task optionalStartBackend {
+    dependsOn ":jokesbackend:appengineRun"
+    doLast{
+        println "Engine started"
+    }
+}
+task optionalStopBackend {
+    dependsOn ":jokesbackend:appengineStop"
+    doLast{
+        println "Engine stopped"
+    }
+}
+task optionalRunTests{
+    dependsOn ":app:connectedAndroidTest"
+    doLast{
+        println "Tests Completed"
+    }
+}
+task optionalTestTask {
+    dependsOn = ["optionalStartBackend", "optionalRunTests"]
+    finalizedBy "optionalStopBackend"
+    doLast {
+        println 'optionalTestTask completed'
+    }
+}
+optionalRunTests.mustRunAfter optionalStartBackend
+

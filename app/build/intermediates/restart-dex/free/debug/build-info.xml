@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="453572509679339" >
+
+    <task
+        name="javac"
+        duration="1952" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="3141" />
+    <task
+        name="verifier"
+        duration="3077" />
+
+    <artifact
+        location="C:\shradha\udacity\android\project4\ud867-master\FinalProject\app\build\outputs\apk\app-free-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="453572509679339" >
+        <artifact
+            location="C:\shradha\udacity\android\project4\ud867-master\FinalProject\app\build\outputs\apk\app-free-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
