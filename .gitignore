@@ -1,27 +1,3 @@
-Last login: Fri Jul  1 10:36:49 on ttys001
-kewals-MacBook-Air:~ kewalkrishna$ cd Desktop/
-kewals-MacBook-Air:Desktop kewalkrishna$ cd AndroidNanoDegree/
-kewals-MacBook-Air:AndroidNanoDegree kewalkrishna$ cd Projects/
-kewals-MacBook-Air:Projects kewalkrishna$ cd PopularMovies/
-kewals-MacBook-Air:PopularMovies kewalkrishna$ vim .gitignore 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 *.iml
 .gradle
 /local.properties
@@ -30,7 +6,6 @@ kewals-MacBook-Air:PopularMovies kewalkrishna$ vim .gitignore
 .DS_Store
 /build
 /captures
-gradle
 .DS_Store
 
 # built application files
