@@ -7,9 +7,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
+// import com.google.android.gms.ads.AdListener;
+// import com.google.android.gms.ads.AdRequest;
+// import com.google.android.gms.ads.InterstitialAd;
 import com.jokesjava.JokesJava;
 
 
